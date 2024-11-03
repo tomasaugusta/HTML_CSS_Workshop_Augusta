@@ -10,7 +10,7 @@
     --color-red-accent: #FB3B64;
     --color-green-accent: #55DFB4;
     --color-blue-accent: #07ACE6;
-    --color-border: #00000029;
+    --color-box-shadow: #00000029;
     --color-black: #000000;
     --color-grey: #A5A5A5;
     --color-light-grey: #F7F7F7;
@@ -20,11 +20,230 @@
 
     --font-headings: "Raleway", sans-serif;
     --font-texts: "Open Sans", sans-serif;
-
-    --container-width: 1352px; 
 }
 
 .container {
-    max-width: var(--container-width);
+    width: 1352px;
     margin: 0 auto;
 }
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: var(--color-white);
+    box-shadow: 0 3px 6px #00000029;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logotype {
+    text-decoration: none;
+    font-family: var(--font-headings);
+    font-size: 32px;
+    font-weight: 300;
+    color: var(--color-primary);
+}
+
+.global-nav {
+    display: flex;
+}
+
+.nav-item {
+    padding: 0 26px;
+}
+
+.nav-item:last-child {
+    padding-right: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--font-texts);
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--color-grey);
+    padding: 28px 18px 22px;
+    border-bottom: 4px solid transparent;
+}
+
+.nav-link:hover {
+    color: var(--color-black);
+    border-color: var(--color-primary);
+}
+/* END of HEADER */
+
+/* MAIN */
+/* INTRO */
+.intro {
+    background-color: var(--color-white);
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 120px 0 50px 0;
+}
+
+h1.intro-heading {
+    font-family: var(--font-headings);
+    font-size: 49px;
+    font-weight: 400;
+    color: var(--color-black);
+    margin-bottom: 10px;
+}
+
+p.subheading {
+    font-family: var(--font-texts);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-black);
+    margin: 10px 0 19px 0;
+}
+
+a.intro-btn {
+    text-decoration: none;
+    font-family: var(--font-texts);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-white); 
+    padding: 22px 157px 23px 157px;
+    background-color: var(--color-primary);
+    border-radius: 40px;
+    margin-top: 19px;
+}
+
+a.intro-btn:hover {
+    box-shadow: 5px 10px 14px #07ACE629;
+}
+
+img.intro-background {
+    width: 100%;
+    height: auto; 
+}
+/* END of INTRO */
+
+/* WHY US */
+.why-us {
+    background-color: var(--color-white);
+    box-shadow: var(--color-box-shadow);
+}
+
+.why-us-container {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2.why-us-heading {
+    font-family: var(--font-headings);
+    font-size: 36px;
+    font-weight: 400;
+    color: var(--color-black);
+    margin-top: 100px;
+}
+
+.why-us-articles {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto;
+}
+
+.article {
+    max-width: 160px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+p.quantity {
+    font-family: var(--font-headings);
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 5.96px;
+    text-align: center;
+    color: var(--color-black);
+    margin-top: 13px;
+}
+
+p.description {
+    font-family: var(--font-headings);
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-grey);
+    margin-top: 19px;
+}
+
+.daily-entries-circle {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    background-color: var(--color-red-accent);
+    position: relative;
+}
+
+.img-person {
+    position: absolute;
+    top: 0;
+    left: 45%;
+}
+
+.seen-products-circle {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    position: relative;
+}
+
+.img-eye {
+    position: absolute;
+    top: 14px;
+    left: 47%;
+}
+
+.added-posts-circle {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    background-color: var(--color-green-accent);
+    position: relative;
+}
+
+.img-catalog {
+    position: absolute;
+    top: 6%;
+    left: 50%;
+}
+/* END od WHY US */
+
+/* BENEFITS */
+
+/* END of BENEFITS */
+
+/* PRICES */
+/* END of PRICES */
+
+/* CONTACT */
+/* END of CONTACT */
+/* END of MAIN */
+
+/* FOOTER */
+/* END of FOOTER */
